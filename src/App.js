@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import PokemonCard from './Components';
+import detail from './Components/CardDetails';
+
+function CreateCard(props) {
+  return <PokemonCard id={props.id} name={props.name} type={props.type} exp={props.Base_experience} />
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div ClassName="App">
+      <div ClassName="heading">
+        <h1>POKEMON!</h1>
+      </div>
+      {detail.map(CreateCard)}
+
     </div>
   );
 }
