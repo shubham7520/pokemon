@@ -1,9 +1,9 @@
 import "../ComponentStyles/pokeCard.css";
 
 
-const IMG_URL = "https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/";
+const IMG_URL = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/";
 function PokemonCard(props) {
-    let imgsrc = `${IMG_URL}${props.id}.svg`
+    let imgsrc = `${IMG_URL}${props.id}.png`
     return (
         <div className="cardcontener">
 
@@ -12,7 +12,7 @@ function PokemonCard(props) {
                     <h2 className="pokename">{props.name}</h2>
                 </div>
                 <div className="img-contener">
-                    <img className="img" src={imgsrc} />
+                    <img className="img" src={imgsrc} alt="pokemon-icon" />
                 </div>
                 <div className="poke-type">
                     <b>  Type: {props.type} </b>

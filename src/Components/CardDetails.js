@@ -6,7 +6,5 @@ const detail = [
     { id: 25, name: 'Pikachu', type: 'electric', Base_experience: '112' },
     { id: 94, name: 'Jigglypuff', type: 'normal', Base_experience: '225' },
     { id: 133, name: 'Eevee', type: 'poison', Base_experience: '65' },
-
-
 ];
 export default detail;
