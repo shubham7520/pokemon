@@ -23,4 +23,43 @@
 }
 .poke-type{
     margin-top: 20px;
+    margin-bottom: 3px;
+}
+
+@media screen and (max-width: 1064px) {
+    .cardcontener{
+        padding-left: 10%;
+    }
+}
+@media screen and (max-width:775px) {
+    .cardcontener{
+        padding-left: 30%;
+    }
+}
+@media screen and (max-width:620px) {
+    .cardcontener{
+        padding-left: 15%;
+    }
+}
+@media screen and (max-width:430px) {
+    .cardcontener{
+        padding-left: 10vw;
+
+    }
+}
+@media screen and (max-width:360px) {
+    .cardcontener{
+        padding-left: 3vw;
+
+    }
+}
+@media screen and (max-width:330px) {
+    .cardcontener{
+        padding-left: 0%;
+
+    }
+    .pokecard{
+       margin-left: 20px;
+        
+    }
 }
